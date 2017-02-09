@@ -39,7 +39,7 @@ int main (int argc, char** argv) {
         {
             
             startTimer(&timer);
-            int nOnes = countOnes(buffer, rsize);
+            uint64_t nOnes = countOnes(buffer, rsize);
             stopTimer(&timer);
             cout << "Computation time: " << getTimerNs(&timer) << " ns\n";
             cout << "Number of ones: " << nOnes << endl;
